@@ -15,6 +15,9 @@
     ],
     "main": [
       "de.alek.zoom.Zoom"
+    ],
+    "modmenu": [
+      "de.alek.zoom.config.ZoomModMenuIntegration"
     ]
   },
   "mixins": [

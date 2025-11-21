@@ -7,6 +7,11 @@ import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 
+import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
+import me.shedaniel.autoconfig.AutoConfig;
+import de.alek.zoom.ZoomConfig;
+import com.mojang.blaze3d.vertex.PoseStack;
+
 @Mixin(GameRenderer.class)
 public class GameRendererMixin {
 
@@ -20,4 +25,13 @@ public class GameRendererMixin {
         }
     }
 
+    @Inject(method = "renderItemInHand", at = @At("HEAD"), cancellable = true)
+    private void zoom$hideHand(PoseStack poseStack, net.minecraft.client.Camera camera, float partialTick, CallbackInfo ci) {
+         if (ZoomManager.isZooming()) {
+             ZoomConfig config = AutoConfig.getConfigHolder(ZoomConfig.class).getConfig();
+             if (config.hideHand) {
+                 ci.cancel();
+             }
+         }
+    }
 }
