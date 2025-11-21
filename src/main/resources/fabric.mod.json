@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "id": "zoom",
+  "version": "${version}",
+  "name": "Zoom",
+  "description": "",
+  "authors": [],
+  "contact": {},
+  "license": "unlicense",
+  "icon": "assets/zoom/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "de.alek.zoom.client.ZoomClient"
+    ],
+    "main": [
+      "de.alek.zoom.Zoom"
+    ]
+  },
+  "mixins": [
+    "zoom.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
