@@ -1,0 +1,29 @@
+{
+  "zoom.config.title": "Zoom Settings",
+  "text.autoconfig.zoom.title": "Zoom Settings",
+  "text.autoconfig.zoom.category.general": "General",
+  "text.autoconfig.zoom.category.control": "Controls",
+  "text.autoconfig.zoom.category.visual": "Visuals",
+
+  "text.autoconfig.zoom.option.baseZoomFactor": "Base Zoom Factor",
+  "text.autoconfig.zoom.option.baseZoomFactor.@Tooltip": "How strong the zoom is by default. Lower = Closer.",
+  "text.autoconfig.zoom.option.minZoomFactor": "Min Zoom Factor",
+  "text.autoconfig.zoom.option.minZoomFactor.@Tooltip": "Maximum zoom-in level (smallest FOV multiplier).",
+  "text.autoconfig.zoom.option.maxZoomFactor": "Max Zoom Factor",
+  "text.autoconfig.zoom.option.maxZoomFactor.@Tooltip": "Minimum zoom-in level (largest FOV multiplier).",
+  "text.autoconfig.zoom.option.zoomScrollStep": "Scroll Step",
+  "text.autoconfig.zoom.option.zoomScrollStep.@Tooltip": "How much the zoom changes per scroll tick.",
+  "text.autoconfig.zoom.option.smoothDuration": "Smoothness Duration",
+  "text.autoconfig.zoom.option.smoothDuration.@Tooltip": "Higher value means slower/smoother animation.",
+
+  "text.autoconfig.zoom.option.mouseSensitivityFactor": "Mouse Sensitivity",
+  "text.autoconfig.zoom.option.mouseSensitivityFactor.@Tooltip": "Multiplier for mouse sensitivity when zoomed.",
+  "text.autoconfig.zoom.option.resetZoomOnRelease": "Reset on Release",
+
+  "text.autoconfig.zoom.option.cinematicCamera": "Cinematic Camera",
+  "text.autoconfig.zoom.option.cinematicCamera.@Tooltip": "Enable smooth 'cinematic' camera movement while zooming.",
+  "text.autoconfig.zoom.option.hideHand": "Hide Hand",
+  "text.autoconfig.zoom.option.hideHand.@Tooltip": "Hide the player's hand/item while zooming.",
+
+  "key.zoom.toggle": "Zoom"
+}

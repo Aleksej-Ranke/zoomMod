@@ -16,7 +16,7 @@ public class ZoomKeyBinding {
                 "key.zoom.toggle", // Lokalisierungsschlüssel
                 InputConstants.Type.KEYSYM,
                 GLFW.GLFW_KEY_C, // Standardtaste 'C'
-                KeyMapping.Category.MOVEMENT // Kategorie
+                KeyMapping.CATEGORY_MOVEMENT // Kategorie
         );
     }
 

@@ -1,0 +1,29 @@
+{
+  "zoom.config.title": "Zoom Einstellungen",
+  "text.autoconfig.zoom.title": "Zoom Einstellungen",
+  "text.autoconfig.zoom.category.general": "Allgemein",
+  "text.autoconfig.zoom.category.control": "Steuerung",
+  "text.autoconfig.zoom.category.visual": "Visuelles",
+
+  "text.autoconfig.zoom.option.baseZoomFactor": "Basis Zoom-Faktor",
+  "text.autoconfig.zoom.option.baseZoomFactor.@Tooltip": "Wie stark der Zoom standardmäßig ist. Kleiner = Näher.",
+  "text.autoconfig.zoom.option.minZoomFactor": "Maximaler Zoom",
+  "text.autoconfig.zoom.option.minZoomFactor.@Tooltip": "Maximale Vergrößerung (kleinster FOV-Multiplikator).",
+  "text.autoconfig.zoom.option.maxZoomFactor": "Minimaler Zoom",
+  "text.autoconfig.zoom.option.maxZoomFactor.@Tooltip": "Minimale Vergrößerung (größter FOV-Multiplikator).",
+  "text.autoconfig.zoom.option.zoomScrollStep": "Scroll-Schritt",
+  "text.autoconfig.zoom.option.zoomScrollStep.@Tooltip": "Wie stark sich der Zoom pro Scroll-Tick ändert.",
+  "text.autoconfig.zoom.option.smoothDuration": "Glättungsdauer",
+  "text.autoconfig.zoom.option.smoothDuration.@Tooltip": "Höherer Wert bedeutet langsamere/weichere Animation.",
+
+  "text.autoconfig.zoom.option.mouseSensitivityFactor": "Maus-Empfindlichkeit",
+  "text.autoconfig.zoom.option.mouseSensitivityFactor.@Tooltip": "Multiplikator für die Mausgeschwindigkeit beim Zoomen.",
+  "text.autoconfig.zoom.option.resetZoomOnRelease": "Reset beim Loslassen",
+
+  "text.autoconfig.zoom.option.cinematicCamera": "Kinomodus",
+  "text.autoconfig.zoom.option.cinematicCamera.@Tooltip": "Aktiviert die weiche Kamerabewegung beim Zoomen.",
+  "text.autoconfig.zoom.option.hideHand": "Hand ausblenden",
+  "text.autoconfig.zoom.option.hideHand.@Tooltip": "Blendet die Hand/das Item beim Zoomen aus.",
+
+  "key.zoom.toggle": "Zoom"
+}
