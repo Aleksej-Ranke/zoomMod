@@ -8,6 +8,7 @@ import net.minecraft.util.Mth;
 public class ZoomManager {
 
     private static double currentZoomFactor = 1.0;
+    private static double prevZoomFactor = 1.0; // For interpolation
     private static double targetZoomFactor = 1.0;
     private static double lastZoomFactor = 1.0; // Store user's adjusted zoom level
 
@@ -52,6 +53,7 @@ public class ZoomManager {
 
         // Store the state for next tick
         wasZooming = isZooming;
+        prevZoomFactor = currentZoomFactor; // Store previous value for interpolation
 
         // Smooth transition
         // We interpolate currentZoomFactor towards targetZoomFactor
@@ -72,6 +74,10 @@ public class ZoomManager {
 
     public static double getZoomFactor() {
         return currentZoomFactor;
+    }
+
+    public static double getZoomFactor(float partialTicks) {
+        return Mth.lerp(partialTicks, prevZoomFactor, currentZoomFactor);
     }
 
     public static boolean isZooming() {
